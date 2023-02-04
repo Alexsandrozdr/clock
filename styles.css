@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;300;500&family=DM+Mono:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #999999;
+}
+body main section div h1 {
+  color: #ff33bb;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainSmart {
+  font-family: "MD Mono", monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  user-select: none;
+  padding: 3rem;
+  margin-top: 33px;
+  border-radius: 20px;
+  background: #111;
+  color: cyan;
+  text-align: center;
+  font-size: 2rem;
+}
+#smartWatch {
+  user-select: none;
+  margin-top: 1rem;
+}
+#hourSmart,
+#minutesSmart {
+  font-size: 2rem;
+}
+#secondsSmart {
+  font-size: 1rem;
+}
+#dateSmart {
+  display: inline-block;
+  user-select: none;
+  color: #ff33bb;
+  font-size: 1rem;
+}
+#week {
+  color: greenyellow;
+}
+@keyframes piscar {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+.twoPoints {
+  animation: piscar 1s infinite;
+}
+.twoPoints:last-child {
+  font-size: 0.5rem;
+}
