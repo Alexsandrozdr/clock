@@ -70,3 +70,20 @@ section {
 .twoPoints:last-child {
   font-size: 0.5rem;
 }
+
+.buttonNext {
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 1em;
+  padding: 0.7em;
+  margin: 13px;
+  flex-direction: column;
+  display: flex;
+  background: rgba(221, 12, 12, 0.897);
+}
+.buttonNext:hover {
+  background: rgba(255, 3, 3, 0.822);
+  font-size: 1.1em;
+  transition: all 0.3s;
+}

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgba(34, 28, 87, 0.699);
+}
+.hide {
+  display: none;
+}
+.wrapper {
+  flex-direction: column;
+  display: flex;
+  background-color: #060d2c;
+  width: 90%;
+  max-width: 27.25em;
+  max-height: 493px;
+  min-width: 300px;
+  padding: 4em 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+  overflow-y: auto;
+}
+.relogio {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(224, 11, 11, 0.726);
+  padding: 13px 33px;
+  font-family: "Roboto Mono", monospace;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.inputs input {
+  width: 2.8em;
+  font-size: 1.7em;
+  border: 1px solid #000;
+  border-radius: 0.5em;
+  padding: 0.5em 0.3em;
+}
+#set {
+  background-color: #ff0000;
+  border: none;
+  padding: 1.1em 1.9em;
+  display: block;
+  margin: 1.5em auto 0 auto;
+  border-radius: 0.2em;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+}
+.alarme {
+  color: #ffffff;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 8fr 2fr 2fr;
+  gap: 1em;
+  margin-top: 1.5em;
+  align-items: center;
+  border-bottom: 1px solid #898f9b;
+  padding-bottom: 0.6em;
+}
+.alarme input[type="checkbox"] {
+  appearance: none;
+  height: 2em;
+  width: 3.75em;
+  background-color: rgb(255, 0, 0);
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+.alarme input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  background-color: #c7cfc9;
+  height: 1.43em;
+  width: 1.43em;
+  border-radius: 50%;
+  top: 0.25em;
+  left: 0.25em;
+  transition: all 0.5s;
+}
+.alarme input[type="checkbox"]:checked {
+  background-color: #34e63dbb;
+}
+.alarme input[type="checkbox"]:checked:before {
+  background-color: #377dff;
+  left: 2em;
+  transition: all 0.5s;
+}
+.deleteButton {
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #cfb1b1;
+  border: none;
+  cursor: pointer;
+}
+.deleteButton:hover {
+  color: #ff0000;
+}
+.buttonReturn {
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 1em;
+  padding: 0.7em;
+
+  margin: 13px;
+  flex-direction: column;
+  display: flex;
+  background: rgba(221, 12, 12, 0.897);
+}
+.buttonReturn a {
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+.buttonReturn:hover {
+  background: rgba(255, 3, 3, 0.822);
+  font-size: 1.1em;
+  transition: all 0.3s;
+}
